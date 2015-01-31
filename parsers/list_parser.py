@@ -8,7 +8,7 @@ __author__ = "Fawers"
 
 import os
 import settings
-from AnimeList import Title
+from al_types import Title
 
 def parse(filename=None):
     '''\

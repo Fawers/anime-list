@@ -10,8 +10,7 @@ import re
 from urllib2   import urlopen
 from datetime  import datetime, timedelta
 import settings
-import ansi
-from AnimeList import AirTime
+from al_types  import AirTime
 from parsers   import list_parser
 
 URL = "http://animecalendar.net/{}/{}/{}"
