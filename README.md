@@ -51,3 +51,9 @@ Example list: anime_list
 
 **Final note:** prefer to place the software in a place where you have write permissions  
 (somewhere like `$HOME` (linux) or `%USERPROFILE%` (windows))
+
+#### Dependencies
+* Python2.7
+
+#### To run
+* Either run `python <foldername>` or `python __main__.py`
