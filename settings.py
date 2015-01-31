@@ -52,12 +52,17 @@ def _setup():
 
     SETTINGS['weekday'] = datetime.now().isoweekday()
 
-    # Set the path variable to be able to import
-    # modules from the root package
+    ## Set the path variable to be able to import
+    ## modules from the root package
+    # I'll just leave this here because abspath. <3
     path[0] = abspath(path[0])
-    path.insert(0, dirname(path[0]))
-    # Ugly hack, I know. But those shitty relative
-    # imports were driving me crazy.
+    ## path.insert(0, dirname(path[0]))
+    ## Ugly hack, I know. But those shitty relative
+    ## imports were driving me crazy.
+    # Ugly hack is no more needed! :)
+    # Lesson learned: do not put useful
+    # stuff in parent __init__.py if you
+    # want to access it from child packages.
 
 def get(key, default=None):
     return SETTINGS.get(key, default)
