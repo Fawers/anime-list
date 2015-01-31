@@ -12,7 +12,7 @@ from parsers import arg_parser as args, url_parser
 if __name__ == '__main__':
     # Check for internet connection
     try:
-        urlopen('http://www.google.com/')
+        urlopen('http://www.google.com/').close()
     except IOError:
         print >>stderr, strings.get('no_connection')
         exit(8)
