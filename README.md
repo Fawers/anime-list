@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-Anime List Querier
-==================
-=======
 Anime List
 ==========
->>>>>>> 6af944e1410876667a590896d1dfd4206fb79ce2
 
 
 This README file provides an example of how an anime list should look like. In the file itself, a semi-colon (`;`) in the beggining of a line may be used to indicate a comment, which will be ignored by the software. This is a very basic syntax that has been imaginated to help organizing titles and queries. The website used to search for titles is [AnimeCalendar](http://animecalendar.net/).
@@ -16,23 +11,15 @@ A title is what the show is called, and also what you want your screen to show. 
 There are some titles on [AnimeCalendar](http://animecalendar.net/) that are misspelled, e.g., Nanatsu no Taizai. If you look for Nanatsu no Taizai, you'll find Nanatsu no Taiza instead. That means, searching for 'Nanatsu no Taizai' won't show any results.
 
 ### How can I tell title from query?
-<<<<<<< HEAD
-As said earlier, the syntax is very basic. All you have to do is separate a title from a query using a right arrow: `->`. So, `Nanatsu no Taizai -> nanatsu no taiza` will search for `nanatsu no  taiza` and show `Nanatsu no Taizai` when found. Leading and trailing spaces are stripped, which means `title->query` will be treated just like `  title         ->      query` would be.
-=======
 As said earlier, the syntax is very basic. All you have to do is separate a title from a query using a right arrow: `->`. So, `Nanatsu no Taizai -> nanatsu no taiza` will search for `nanatsu no  taiza` and show `Nanatsu no Taizai` when found. Leading and trailing spaces are stripped, which means `title->query` will be treated just like  
 `  title         ->      query` would be.
->>>>>>> 6af944e1410876667a590896d1dfd4206fb79ce2
 
 ### May I omit queries?
 Yes. If the query is the exact same thing as the title, then you can omit the query and the title will be used as the query as well, which means that `Isuca -> Isuca` is essentially the same thing as just `Isuca`.
 
 ***
 
-<<<<<<< HEAD
 **Queries are case-insensitive.** It doesn't matter if you write `dog days`, or `DOG DAYS`, or even `DoG DaYS`they will be treated the same way.
-=======
-**Queries are case-insensitive.** It doesn't matter if you write `dog days`, or `DOG DAYS`, or even `DoG DaYS`; they will be treated the same way.
->>>>>>> 6af944e1410876667a590896d1dfd4206fb79ce2
 Insert a question mark when you don't know how to represent a certain character. For example, `Shinmai Maō no Testament`: in this case, the query should (but doesn't need to) be `shinmai ma? no testament`, without the quotes. These question marks will then be converted to the `.*` regex pattern.
 
 ***
@@ -41,11 +28,7 @@ Insert a question mark when you don't know how to represent a certain character.
 
 ***
 
-<<<<<<< HEAD
 Example list: anime_list.txt
-=======
-Example list: anime_list
->>>>>>> 6af944e1410876667a590896d1dfd4206fb79ce2
 ----------------------------
 
     ; Use semi-colons to write comments,
