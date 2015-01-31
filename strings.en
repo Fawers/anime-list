@@ -1,0 +1,15 @@
+{
+    "arg_parser__terminal": "use terminal to display output (Linux only)",
+    "no_connection": "No Internet connection!",
+    "weekdays": [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+    ],
+    "no_anime": "No Anime airing today",
+    "at": "at"
+}

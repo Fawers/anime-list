@@ -1,0 +1,15 @@
+{
+    "arg_parser__terminal": "usar o terminal para exibir a saída (apenas Linux)",
+    "no_connection": "Você não está conectado à Internet!",
+    "weekdays": [
+        "Domingo",
+        "Segunda-feira",
+        "Terça-feira",
+        "Quarta-feira",
+        "Quinta-feira",
+        "Sexta-feira",
+        "Sábado"
+    ],
+    "no_anime": "Não saem episódios hoje",
+    "at": "às"
+}
