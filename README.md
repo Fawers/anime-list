@@ -28,7 +28,7 @@ Insert a question mark when you don't know how to represent a certain character.
 
 ***
 
-Example list: anime_list.txt
+Example list: anime_list
 ----------------------------
 
     ; Use semi-colons to write comments,
