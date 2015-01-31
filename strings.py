@@ -2,7 +2,7 @@ __author__ = "Fawers"
 
 import settings, json
 from os.path    import join, exists
-from AnimeList  import BASE_DIR
+from __init__   import BASE_DIR
 from sys        import stderr
 
 def _setup():
