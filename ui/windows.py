@@ -13,6 +13,9 @@ def run(data):
 
     weekday  = strings.get('weekdays')[settings.get('weekday')]
 
+    # Escape quotes
+    data = [d.replace('"', '""') for d in data]
+
     text = '"' + '" & vbCrLf & "'.join(data) + '"'
     
     with open(filename, 'w') as script:
