@@ -3,15 +3,21 @@ __author__ = "Fawers"
 import argparse
 import strings
 
-# Parse args
-_parser = argparse.ArgumentParser()
-_parser.add_argument("-t", "--terminal", action="store_true",
-    help=strings.get('arg_parser__terminal'))
+def _setup():
+    global ARGS
+    # Parse args
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-t", "--terminal", action="store_true",
+        help=strings.get('arg_parser__terminal'))
+    parser.add_argument("-d", "--date",
+        help=strings.get('arg_parser__date'))
 
-ARGS = _parser.parse_args()
+    ARGS = parser.parse_args()
 
 def get(arg, default=None):
     if arg in ARGS:
         return getattr(ARGS, arg)
     else:
         return default
+
+_setup()
