@@ -22,7 +22,10 @@ function is responsible for querying the website
 and fetching the desired data. Return value is a
 list containing show title, episode number and
 airtime. Such list will be ordered by airtime.'''
-    now       = datetime.now()
+    if settings.get('date'):
+        now   = settings.get('date')
+    else:
+        now   = datetime.now()
     yesterday = now - timedelta(1)
     tomorrow  = now + timedelta(1)
     titles    = list_parser.parse()
@@ -32,7 +35,7 @@ airtime. Such list will be ordered by airtime.'''
     airtime_pattern = re.compile(r'(?<=at )\d\d:\d\d', re.I)
 
     for date in (yesterday, now, tomorrow):
-        req  = urlopen(URL.format(date.year,date.month,date.day))
+        req  = urlopen(URL.format(*date.timetuple()[:3]))
         data = req.read()
         req.close()
 
