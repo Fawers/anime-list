@@ -2,7 +2,7 @@ __author__ = "Fawers"
 
 import time, json
 from os.path    import join, exists, abspath, dirname
-from sys        import stderr, path
+from sys        import stderr
 from datetime   import datetime, timedelta
 from __init__   import BASE_DIR, SYSTEM_NAME
 
@@ -50,19 +50,7 @@ def _setup():
 
     SETTINGS['system_name'] = SYSTEM_NAME
 
-    SETTINGS['weekday'] = datetime.now().isoweekday()
-
-    ## Set the path variable to be able to import
-    ## modules from the root package
-    # I'll just leave this here because abspath. <3
-    path[0] = abspath(path[0])
-    ## path.insert(0, dirname(path[0]))
-    ## Ugly hack, I know. But those shitty relative
-    ## imports were driving me crazy.
-    # Ugly hack is no more needed! :)
-    # Lesson learned: do not put useful
-    # stuff in parent __init__.py if you
-    # want to access it from child packages.
+    SETTINGS['weekday'] = datetime.now().isoweekday() % 7
 
 def get(key, default=None):
     return SETTINGS.get(key, default)
