@@ -1,5 +1,6 @@
 {
     "arg_parser__terminal": "use terminal to display output (Linux only)",
+    "arg_parser__date": "query for a specific date. Allowed values: [yesterday,tomorrow,DATE] where DATE is a string in the YYYY-MM-DD format",
     "no_connection": "No Internet connection!",
     "weekdays": [
         "Sunday",
@@ -11,5 +12,7 @@
         "Saturday"
     ],
     "no_anime": "No Anime airing today",
-    "at": "at"
+    "at": "at",
+    "yesterday": "yesterday",
+    "tomorrow":  "tomorrow"
 }
