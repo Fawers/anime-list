@@ -52,6 +52,14 @@ Insert a question mark when you don't know how to represent a certain character.
 
 ***
 
+#### Command-line arguments
+| Command-line argument |               Brief Description         | Values | Optional |
+|:---------------------:|---------------------------------------- |--------|:--------:|
+| `-t` or `--terminal`  | Display output on terminal (Linux only) |        |    ✓     |
+| `-d` or `--date`      | See shows for specific date | `yesterday`,`tomorrow`,`YYYY-MM-DD` date format |✓|
+
+***
+
 Example list: anime_list
 ----------------------------
 
@@ -82,9 +90,10 @@ Example list: anime_list
 #### To run
 * Either run `python <foldername>` or `python __main__.py`
 
-| Contact |
-| [http://fb.com/fswerneck] |
-| <fabricioswerneck@gmail.com> |
+|              Contact                |
+|-------------------------------------|
+| [Facebook](http://fb.com/fswerneck) |
+| <fabricioswerneck@gmail.com>        |
 
 [AniList]: http://myanimelist.net/
 [AniCal]: http://animecalendar.net/
