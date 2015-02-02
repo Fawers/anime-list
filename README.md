@@ -9,11 +9,11 @@ Unlike [MyAnimeList][AniList], Anime List is not meant to save all of your watch
 
 ### Cool! How does it look like?
 * On Windows:
- *![windows screenshot](screenshot_windows.png "Windows Screenshot")
+ * ![windows screenshot](screenshot_windows.png "Windows Screenshot")
 * On Linux:
- *![linux screenshot](screenshot_linux.png "Linux Screenshot")
+ * ![linux screenshot](screenshot_linux.png "Linux Screenshot")
 * On a Linux terminal:
- *![terminal screenshot](screenshot_terminal.png "Terminal Screenshot")
+ * ![terminal screenshot](screenshot_terminal.png "Terminal Screenshot")
 
 
 ### That seems nice! But how should I organize a list for me?
