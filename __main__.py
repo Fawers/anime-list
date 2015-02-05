@@ -33,7 +33,7 @@ if __name__ == '__main__':
         else: # YYYY-MM-DD format
             d = datetime(*map(int, date.split('-')))
             settings.SETTINGS['date']    = d
-            settings.SETTINGS['weekday'] = d.weekday
+            settings.SETTINGS['weekday'] = d.weekday()
 
 
     terminal = args.get('terminal')
