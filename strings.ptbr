@@ -3,13 +3,13 @@
     "arg_parser__date": "mostrar para uma data específica. Valores permitidos: [ontem,amanha,DATA] onde DATA é uma string no formato AAAA-MM-DD",
     "no_connection": "Você não está conectado à Internet!",
     "weekdays": [
-        "Domingo",
         "Segunda-feira",
         "Terça-feira",
         "Quarta-feira",
         "Quinta-feira",
         "Sexta-feira",
-        "Sábado"
+        "Sábado",
+        "Domingo"
     ],
     "no_anime": "Não saem episódios hoje",
     "at": "às",

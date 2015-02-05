@@ -23,15 +23,15 @@ if __name__ == '__main__':
     if date: # Add to settings
         n = datetime.now()
         if date in ('yesterday','ontem'):
-            settings.SETTINGS['date']    = n - timedelta(1)
-            settings.SETTINGS['weekday'] = (n.isoweekday() - 1) % 7
+            settings.SETTINGS['date']    = n -= timedelta(1)
+            settings.SETTINGS['weekday'] = n.weekday()
         elif date in ('tomorrow','amanha'):
-            settings.SETTINGS['date']    = n + timedelta(1)
-            settings.SETTINGS['weekday'] = (n.isoweekday() + 1) % 7
+            settings.SETTINGS['date']    = n += timedelta(1)
+            settings.SETTINGS['weekday'] = n.weekday()
         else: # YYYY-MM-DD format
             d = datetime(*map(int, date.split('-')))
             settings.SETTINGS['date']    = d
-            settings.SETTINGS['weekday'] = d.isoweekday() % 7
+            settings.SETTINGS['weekday'] = d.weekday
 
 
     terminal = args.get('terminal')

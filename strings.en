@@ -3,13 +3,13 @@
     "arg_parser__date": "query for a specific date. Allowed values: [yesterday,tomorrow,DATE] where DATE is a string in the YYYY-MM-DD format",
     "no_connection": "No Internet connection!",
     "weekdays": [
-        "Sunday",
         "Monday",
         "Tuesday",
         "Wednesday",
         "Thursday",
         "Friday",
-        "Saturday"
+        "Saturday",
+        "Sunday"
     ],
     "no_anime": "No Anime airing today",
     "at": "at",

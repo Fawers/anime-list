@@ -50,7 +50,7 @@ def _setup():
 
     SETTINGS['system_name'] = SYSTEM_NAME
 
-    SETTINGS['weekday'] = datetime.now().isoweekday() % 7
+    SETTINGS['weekday'] = datetime.now().weekday()
 
 def get(key, default=None):
     return SETTINGS.get(key, default)
