@@ -38,7 +38,7 @@ def _setup():
         local, utc  = datetime(*_local[:6]), datetime(*_utc[:6])
         
         local_tz    = local - utc
-        tz_offset   = local_tz - timedelta(seconds=9*3600)
+        tz_offset   = local_tz - timedelta(hours=9)
         # 9 because the standard timezone on AnimeCalendar.net
         # is UTC + 9 (Japan's timezone). And 3600s = 1h
     else:
