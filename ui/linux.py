@@ -8,4 +8,5 @@ def run(data):
         'weekdays')[settings.get('weekday')])
     text    = '\\n'.join(data).replace('"', r'\"')
 
-    os.system('notify-send -u critical %s "%s"' %(summary,text))
+    os.system('notify-send -i "%s" -u critical %s "%s"' %
+             (settings.get('icon'),summary,text))
