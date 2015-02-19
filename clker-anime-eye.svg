@@ -1,0 +1,48 @@
+<?xml version="1.0"?><svg width="665.41962" height="665.41962" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <title>Anime eye</title>
+ <defs>
+  <filter id="filter3301" x="-0.115801" width="1.231602" y="-0.117545" height="1.235091">
+   <feGaussianBlur stdDeviation="1.641958" id="feGaussianBlur3303"/>
+  </filter>
+  <filter id="path3323_blur">
+   <feGaussianBlur stdDeviation="2"/>
+  </filter>
+  <filter id="svg_22_blur" x="-50%" y="-50%" width="200%" height="200%">
+   <feGaussianBlur stdDeviation="7"/>
+  </filter>
+  <linearGradient id="linearGradient3315">
+   <stop offset="0" id="stop3317" stop-color="#000000"/>
+   <stop offset="1" id="stop3319" stop-opacity="0" stop-color="#000000"/>
+  </linearGradient>
+  <radialGradient xlink:href="#linearGradient3315" id="radialGradient3511" gradientUnits="userSpaceOnUse" gradientTransform="matrix(21.8536, 127.831, -141.931, 24.2641, 36860.5, -52320.2)" cx="349.33572" cy="312.65402" fx="349.33572" fy="312.65402" r="17.014978"/>
+  <pattern id="gridpattern" patternUnits="userSpaceOnUse" x="0" y="0" width="100" height="100">
+   <image id="svg_1" x="0" y="0" width="100" height="100"/>
+  </pattern>
+  <radialGradient id="svg_19" spreadMethod="pad" cx="0.472656" cy="0.5" r="0.5">
+   <stop stop-color="#ffffff" offset="0.570313"/>
+   <stop stop-color="#e5e5e5" stop-opacity="0.996094" offset="0.972656"/>
+  </radialGradient>
+  <linearGradient id="svg_2" x1="0.84375" y1="0.890625" x2="0.453125" y2="0.324219" spreadMethod="pad">
+   <stop stop-opacity="0.996094" stop-color="#280054" offset="0"/>
+   <stop stop-color="#000000" stop-opacity="0.996094" offset="1"/>
+  </linearGradient>
+  <radialGradient r="0.5" id="svg_6" spreadMethod="pad" cx="0.492188" cy="0.472656">
+   <stop stop-opacity="0.996094" stop-color="#26004f" offset="0.496094"/>
+   <stop stop-color="#000000" stop-opacity="0.996094" offset="1"/>
+  </radialGradient>
+ </defs>
+ <metadata id="metadata3447">image/svg+xml</metadata>
+ <g>
+  <title>Layer 1</title>
+  <path id="path3415" d="m655.493469,415.031921a322.795349,322.795349 0 1 1 -645.590699,-160.678375a322.795349,322.795349 0 1 1 645.590699,160.678375z" stroke-miterlimit="4" stroke-linecap="round" stroke-width="0" stroke="#000000" fill-rule="nonzero" fill="#ffffff"/>
+  <path id="path3185" d="m488.427429,369.913025a163.350708,160.837601 0 1 1 -326.701385,-81.310944a163.350708,160.837601 0 1 1 326.701385,81.310944z" stroke-miterlimit="4" stroke-linecap="round" stroke-width="1.2" stroke="#000000" fill-rule="nonzero" fill="#000000"/>
+  <path id="path3305" d="m473.959595,368.290741a146.084305,143.836823 0 1 1 -292.168579,-72.7164a146.084305,143.836823 0 1 1 292.168579,72.7164z" filter="url(#filter3301)" stroke-miterlimit="4" stroke-linecap="round" stroke-width="1.2" stroke="#000000" fill-rule="nonzero" fill="url(#radialGradient3511)"/>
+  <path d="m473.959595,368.290741a146.084305,143.836823 0 1 1 -292.168579,-72.7164a146.084305,143.836823 0 1 1 292.168579,72.7164z" id="path3325" filter="url(#filter3301)" stroke-miterlimit="4" stroke-linecap="round" stroke-width="1.2" stroke="#000000" fill-rule="nonzero" fill="url(#svg_2)"/>
+  <path id="path3409" d="m486.882813,378.025787a148.507492,146.744675 0 1 1 -297.014984,-74.186462a148.507492,146.744675 0 1 1 297.014984,74.186462z" filter="url(#filter3301)" stroke-miterlimit="4" stroke-linecap="round" stroke-width="1.2" stroke="#000000" fill-rule="nonzero" fill="url(#svg_6)"/>
+  <path d="m391.283722,359.077423a57.762299,92.692749 0 1 1 -113.29541,-51.086395a57.762299,92.692749 0 1 1 115.525879,46.139679z" filter="url(#path3323_blur)"/>
+  <path d="m395.305054,349.008453a57.762299,92.692749 0 1 1 -117.316742,-41.017426a57.762299,92.692749 0 1 1 115.525879,46.139679z" filter="url(#path3323_blur)"/>
+  <path id="path3323" d="m390.514191,354.130707a57.762299,92.692749 0 1 1 -115.525879,-46.139679a57.762299,92.692749 0 1 1 115.525879,46.139679z" stroke-miterlimit="4" stroke-linecap="round" stroke-width="1.2" stroke="#000000" fill-rule="nonzero" fill="#000000" filter="url(#path3323_blur)"/>
+  <path d="m243.453705,165.018906c-144.486267,71.976242 -202.639053,210.610764 -202.638916,210.610825c19.035831,-27.742401 41.987648,-52.269348 66.709412,-73.841339c-38.053314,59.472717 -55.119091,115.310669 -55.119232,115.310608l-27.166689,36.057495c3.262701,9.105347 37.197592,24.320862 48.223543,-8.872864c111.905579,-336.894257 362.824219,-253.560516 456.241791,-208.430786c0.108276,0.052277 0.473022,0.409882 0.580933,0.462097c0.920166,0.982635 9.312622,3.878113 22.984985,11.645416c-2.303589,20.32547 -13.931885,141.343018 -110.713593,226.44931c-61.485748,54.068359 -187.262665,54.206238 -290.439667,50.086975c0,0 130.221161,25.781189 246.500397,-9.161072c136.064972,-40.888184 181.00943,-209.372131 185.828888,-261.733948c3.705688,-1.4086 6.553223,-3.321106 6.482422,-3.379578c-0.113159,-0.093933 62.0625,-33.012756 39.109985,-43.43985c-46.558228,-21.150604 -88.202393,-35.98526 -126.876373,-45.349854c-16.294006,-3.945419 -31.865234,-6.687195 -47.274963,-8.773468c55.205292,-10.069839 93.773407,-13.46846 96.964569,-15.057693c-0.176514,-0.072617 -0.188354,-0.394745 -0.580933,-0.462112c-5.552856,-0.952621 -41.505859,-10.735611 -97.924591,-13.781746c-84.627991,-4.569366 -154.353821,13.496986 -210.891968,41.661583z" id="path3170" stroke-miterlimit="4" stroke-width="1.062261" stroke="#000000" fill-rule="evenodd" fill="#000000"/>
+  <path fill="url(#svg_19)" stroke="#000000" stroke-width="1.2" stroke-linecap="round" opacity="0.85" transform="rotate(52.6662, 287.247, 261.892)" d="m243.103104,292.985901c2.879181,-43.260254 36.604111,-146.215027 68.492691,-141.466278c31.88858,4.748749 20.516266,44.082291 2.548676,117.934448c-17.96759,73.852142 -4.718689,96.36499 -30.858673,102.38913c-26.139893,6.024139 -43.061874,-35.597076 -40.182693,-78.8573z" id="svg_22" filter="url(#svg_22_blur)"/>
+ </g>
+</svg>
