@@ -39,3 +39,6 @@ def get(key, default=None):
 
 # Run setup function
 _setup()
+
+# Cleanup namespace
+del _setup

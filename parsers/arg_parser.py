@@ -21,3 +21,5 @@ def get(arg, default=None):
         return default
 
 _setup()
+
+del _setup
