@@ -52,8 +52,14 @@ def _setup():
 
     SETTINGS['weekday'] = datetime.now().weekday()
 
+    # Icon for the Linux ui
+    SETTINGS['icon'] = join(BASE_DIR, 'clker-anime-eye.svg')
+
 def get(key, default=None):
     return SETTINGS.get(key, default)
 
 # Run setup function
 _setup()
+
+# Cleanup namespace
+del _setup
