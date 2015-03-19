@@ -1,2 +1,5 @@
 # Ignore generated .pyc files
 *.pyc
+
+# Ignore personal list
+anime_list
