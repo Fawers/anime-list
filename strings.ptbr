@@ -1,13 +1,13 @@
 {
     "arg_parser__terminal": "usar o terminal para exibir a saída (apenas Linux)",
-    "arg_parser__date": "mostrar para uma data específica. Valores permitidos: [ontem,amanha,DATA] onde DATA é uma string no formato AAAA-MM-DD",
+    "arg_parser__date": "mostrar para uma data específica. Valores permitidos: [ontem,amanha,NÚMERO_INTEIRO,DIA_DA_SEMANA[-],DATA] onde DATA é uma string no formato definido em settings",
     "no_connection": "Você não está conectado à Internet!",
     "weekdays": [
-        "Segunda-feira",
-        "Terça-feira",
-        "Quarta-feira",
-        "Quinta-feira",
-        "Sexta-feira",
+        "Segunda",
+        "Terça",
+        "Quarta",
+        "Quinta",
+        "Sexta",
         "Sábado",
         "Domingo"
     ],

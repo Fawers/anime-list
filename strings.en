@@ -1,6 +1,6 @@
 {
     "arg_parser__terminal": "use terminal to display output (Linux only)",
-    "arg_parser__date": "query for a specific date. Allowed values: [yesterday,tomorrow,DATE] where DATE is a string in the YYYY-MM-DD format",
+    "arg_parser__date": "query for a specific date. Allowed values: [yesterday,tomorrow,INTEGER,WEEKDAY[-],DATE] where DATE is a string in the format defined in settings",
     "no_connection": "No Internet connection!",
     "weekdays": [
         "Monday",
