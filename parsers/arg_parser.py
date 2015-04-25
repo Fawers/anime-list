@@ -19,11 +19,11 @@ def _setup():
 
     ARGS = parser.parse_args()
 
+    n = datetime.now()
 
     if ARGS.date is not None:
         date = ARGS.date
 
-        n = datetime.now()
 
         if date == strings.get('yesterday'):
             n -= timedelta(days=1)
@@ -52,8 +52,8 @@ def _setup():
         else: # settings.get('date_format') format
             n = datetime.strptime(date, settings.get('date_format'))
 
-        settings.SETTINGS['date'] = n
-        settings.SETTINGS['weekday'] = n.weekday()
+    settings.SETTINGS['date'] = n
+    settings.SETTINGS['weekday'] = n.weekday()
 
 def get(arg, default=None):
     if arg in ARGS:
