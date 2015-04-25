@@ -1,6 +1,7 @@
 {
     "language_options": ["en", "ptbr"],
     "language": "en",
-    "filename": "anime_list",
-    "calculate_offset": true
+    "filename": "/home/fawers/anime_list",
+    "calculate_offset": true,
+    "date_format": "%d/%m/%Y"
 }
