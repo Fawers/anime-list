@@ -35,11 +35,20 @@ A title is what the show is called, and also what you want your screen to show. 
 There are some titles on [AnimeCalendar][AniCal] that are misspelled, e.g., Nanatsu no Taizai. If you look for Nanatsu no Taizai, you'll find Nanatsu no Taiza instead. That means, searching for 'Nanatsu no Taizai' won't show any results.
 
 ### How can I tell title from query?
-As said earlier, the syntax is very basic. All you have to do is separate a title from a query using a right arrow: `->`. So, `Nanatsu no Taizai -> nanatsu no taiza` will search for `nanatsu no  taiza` and show `Nanatsu no Taizai` when found. Leading and trailing spaces are stripped, which means `title->query` will be treated just like  
+As said earlier, the syntax is very basic. All you have to do is separate a title from a query using a right arrow: `->`. So, `Nanatsu no Taizai -> nanatsu no taiza` will search for `nanatsu no  taiza` and show `Nanatsu no Taizai` when found. Leading and trailing spaces are stripped, which means `title->query` will be treated just like
 `  title         ->      query` would be.
 
 ### May I omit queries?
 Yes. If the query is the exact same thing as the title, then you can omit the query and the title will be used as the query as well, which means that `Isuca -> Isuca` is essentially the same thing as just `Isuca`.
+
+### Can I output the date in a different format?
+Yes! You can manipulate how the date is going to be output by changing the
+`date_format` setting in the `settings` file.
+**Examples**:
+* Output date in `YYYY-MM-DD` format: `%Y-%m-%d`
+* Output date in 'MM/DD/YY' format: `%m/%d/%y`
+
+For a quick reference, visit [strftime][strftime].
 
 ***
 
@@ -56,7 +65,18 @@ Insert a question mark when you don't know how to represent a certain character.
 | Command-line argument |               Brief Description         | Values | Optional |
 |:---------------------:|---------------------------------------- |--------|:--------:|
 | `-t` or `--terminal`  | Display output on terminal (Linux only) |        |    ✓     |
-| `-d` or `--date`      | See shows for specific date | `yesterday`,`tomorrow`,`YYYY-MM-DD` date format |✓|
+| `-d` or `--date`      | See shows for specific date | `yesterday`, `tomorrow`, `WEEKDAY[-]`, `INTEGER` or an user-defined date format (defined in settings) |✓|
+
+##### Information on WEEKDAY and INTEGER date arguments
+For `WEEKDAY[-]`, you can use any of the weekdays defined in the appropriate
+`strings` file, followed or not by a dash (`-`). Calling the program with
+`-d sunday` will make it output shows for the next sunday; `-d sunday-` will make
+it output shows for the previous sunday. The latter one is more of a reference
+reference tool than a consulting one.
+For `INTEGER`, you can use a number, positive or negative. A positive integer
+will make the program output shows `N` days from the current day, while a
+negative integer will make it output shows `N` days before the current day. Any
+32-bit integer can be used.
 
 ***
 
@@ -81,7 +101,7 @@ Example list: anime_list
     Seiken Tsukai no World Break
     Tokyo Ghoul √A -> tokyo ghoul
 
-**Final note:** prefer to place the software in a place where you have write permissions  
+**Final note:** prefer to place the software in a place where you have write permissions
 (somewhere like `$HOME` (linux) or `%USERPROFILE%` (windows))
 
 #### Dependencies
@@ -97,3 +117,4 @@ Example list: anime_list
 
 [AniList]: http://myanimelist.net/
 [AniCal]: http://animecalendar.net/
+[strftime]: http://strftime.org/
