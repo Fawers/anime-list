@@ -4,9 +4,13 @@ import os
 import settings, strings
 
 def run(data):
-    summary = '"Anime - {}"'.format(strings.get(
-        'weekdays')[settings.get('weekday')])
-    text    = '\\n'.join(data).replace('"', r'\"')
+    summary = '"Anime - {}, {}"'.format(
+        strings.get('weekdays')[settings.get('weekday')],
+        settings.get('date').strftime(settings.get('date_format'))
+    )
+    text = '\\n'.join(data).replace('"', r'\"')
 
-    os.system('notify-send -i "%s" -u critical %s "%s"' %
-             (settings.get('icon'),summary,text))
+    critical = '' if text == strings.get('no_anime') else '-u critical'
+
+    os.system('notify-send -i "%s" %s %s "%s"' % (
+              settings.get('icon'), critical, summary, text))

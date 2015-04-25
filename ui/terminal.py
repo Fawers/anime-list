@@ -9,8 +9,9 @@ def run(data):
     print '{}Anime -'.format(get_code(BOLD, get_bg(BLACK))),
 
     if not data:
-        print '{}{}{}'.format(get_code(get_fg(RED),get_bg(BLACK)),
+        print '{}{}, {}{}'.format(get_code(get_fg(RED),get_bg(BLACK)),
             strings.get('weekdays')[settings.get('weekday')],
+            settings.get('date').strftime(settings.get('date_format')),
             reset())
         print '{}{}{}'.format(get_code(BOLD,get_fg(RED),get_bg(BLACK)),
             strings.get('no_anime'), reset())
@@ -20,8 +21,9 @@ def run(data):
         # and the length of the biggest episode string
         emaxlen = max(len(d[1]) for d in data)
 
-        print '{}{}{}'.format(get_code(get_fg(GREEN),get_bg(BLACK)),
+        print '{}{}, {}{}'.format(get_code(get_fg(GREEN),get_bg(BLACK)),
             strings.get('weekdays')[settings.get('weekday')],
+            settings.get('date').strftime(settings.get('date_format')),
             reset())
         for chunk in data:
             print ('{}{:%is}{} =>' %tmaxlen).format(get_code(BOLD,get_fg(GREEN),
